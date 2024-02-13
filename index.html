@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Baktybay Logistics</title>
+	<link rel="stylesheet" href="css/style.css?version=2">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" >
+
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+	<link href="./css/videojs.css" rel="stylesheet">
+</head>
+<body>
+
+	<header class="site-header">
+		<div class="container">
+			<div class="header-row">
+				<div class="header-social">
+					<a target="_blank" rel="noopener noreferrer" href="https://wa.me/77011221325"
+						class="header-social-item">
+						<svg xmlns="http://www.w3.org/2000/svg" aria-label="WhatsApp" style="margin-bottom: -4px;"
+							role="img" viewBox="0 0 512 512" height="20px" fill="#000000">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+							<g id="SVGRepo_iconCarrier">
+								<rect width="512" height="512" rx="15%" fill="#25d366"></rect>
+								<path fill="#25d366" stroke="#ffffff" stroke-width="26"
+									d="M123 393l14-65a138 138 0 1150 47z"></path>
+								<path fill="#ffffff"
+									d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18">
+								</path>
+							</g>
+						</svg>
+						<span>+7 701 122 13 25</span>
+					</a>
+					<a target="_blank" rel="noopener noreferrer" href="https://instagram.com/baktybay.logistics"
+						class="header-social-item">
+						<svg style="margin-bottom: -4px;" height="20px" viewBox="0 0 32 32" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+							<g id="SVGRepo_iconCarrier">
+								<rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)">
+								</rect>
+								<rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)">
+								</rect>
+								<rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)">
+								</rect>
+								<path
+									d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z"
+									fill="white"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
+									fill="white"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
+									fill="white"></path>
+								<defs>
+									<radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1"
+										gradientUnits="userSpaceOnUse"
+										gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)">
+										<stop stop-color="#B13589"></stop>
+										<stop offset="0.79309" stop-color="#C62F94"></stop>
+										<stop offset="1" stop-color="#8A3AC8"></stop>
+									</radialGradient>
+									<radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1"
+										gradientUnits="userSpaceOnUse"
+										gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)">
+										<stop stop-color="#E0E8B7"></stop>
+										<stop offset="0.444662" stop-color="#FB8A2E"></stop>
+										<stop offset="0.71474" stop-color="#E2425C"></stop>
+										<stop offset="1" stop-color="#E2425C" stop-opacity="0"></stop>
+									</radialGradient>
+									<radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1"
+										gradientUnits="userSpaceOnUse"
+										gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)">
+										<stop offset="0.156701" stop-color="#406ADC"></stop>
+										<stop offset="0.467799" stop-color="#6A45BE"></stop>
+										<stop offset="1" stop-color="#6A45BE" stop-opacity="0"></stop>
+									</radialGradient>
+								</defs>
+							</g>
+						</svg>
+						<span>@baktybay.logistics</span>
+					</a>
+				</div>
+
+				<div class="header-logo">
+					<a href="#">
+						<img src="images/logo.svg" alt="Baktybay Logistics">
+					</a>
+				</div>
+
+
+				<div class="header-lang">
+				  
+					  <select name="language-picker-select" id="language-picker-select">
+						<option value="rus">Русский</option>
+						<option value="kaz">Қазақша</option>
+						<option value="eng">English</option>
+						<!-- other language options -->
+					  </select>
+				  </div>
+
+				<div class="header-btn">
+					<a href="https://lk.baktybay-logistics.kz/" target="_blank" data-text = "vLichniyKabinet">В личный кабинет</a>
+				</div>
+			</div>
+
+			<!-- Mobile version START -->
+			<div class="header-mobile">
+				<div class="header-logo">
+					<a href="#">
+						<img src="images/logo.svg" alt="Baktybay Logistics">
+					</a>
+				</div>
+				<div class="header-btn-mobile">
+					<a href="https://lk.baktybay-logistics.kz/" target="_blank" data-text = "vLichniyKabinet">В личный кабинет</a>
+				</div>
+				<div class="header-lang-mobile">
+				  
+					<select name="language-picker-select2" id="language-picker-select2">
+					  <option value="rus">RU</option>
+					  <option value="kaz">KZ</option>
+					  <option value="eng">EN</option>
+					</select>
+				</div>
+
+			</div>
+			<!-- Mobile version END -->
+
+
+		</div>
+		<div class="header-black">
+			<a target="_blank" rel="noopener noreferrer" href="https://wa.me/77011221325"
+				class="header-social-item-white">
+				<svg xmlns="http://www.w3.org/2000/svg" aria-label="WhatsApp" style="margin-bottom: -3px;" role="img"
+					viewBox="0 0 512 512" height="16px" fill="#000000">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier">
+						<rect width="512" height="512" rx="15%" fill="#25d366"></rect>
+						<path fill="#25d366" stroke="#ffffff" stroke-width="26" d="M123 393l14-65a138 138 0 1150 47z">
+						</path>
+						<path fill="#ffffff"
+							d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18">
+						</path>
+					</g>
+				</svg>
+				<span>+7 701 122 13 25</span>
+			</a> &nbsp;
+			<a target="_blank" rel="noopener noreferrer" href="https://instagram.com/baktybay.logistics"
+				class="header-social-item-white">
+				<svg style="margin-bottom: -3px;" height="16px" viewBox="0 0 32 32" fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier">
+						<rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)"></rect>
+						<rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)"></rect>
+						<rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)"></rect>
+						<path
+							d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z"
+							fill="white"></path>
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
+							fill="white"></path>
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
+							fill="white"></path>
+						<defs>
+							<radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1"
+								gradientUnits="userSpaceOnUse"
+								gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)">
+								<stop stop-color="#B13589"></stop>
+								<stop offset="0.79309" stop-color="#C62F94"></stop>
+								<stop offset="1" stop-color="#8A3AC8"></stop>
+							</radialGradient>
+							<radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1"
+								gradientUnits="userSpaceOnUse"
+								gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)">
+								<stop stop-color="#E0E8B7"></stop>
+								<stop offset="0.444662" stop-color="#FB8A2E"></stop>
+								<stop offset="0.71474" stop-color="#E2425C"></stop>
+								<stop offset="1" stop-color="#E2425C" stop-opacity="0"></stop>
+							</radialGradient>
+							<radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1"
+								gradientUnits="userSpaceOnUse"
+								gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)">
+								<stop offset="0.156701" stop-color="#406ADC"></stop>
+								<stop offset="0.467799" stop-color="#6A45BE"></stop>
+								<stop offset="1" stop-color="#6A45BE" stop-opacity="0"></stop>
+							</radialGradient>
+						</defs>
+					</g>
+				</svg>
+				<span>@baktybay.logistics</span>
+			</a>
+
+		</div>
+	</header>
+
+	<section class="s-banner">
+		<div class="container">
+			<div class="banner-row">
+				<div class="banner-left">
+					<h1 class="banner-title" data-text = "dostavkaTitle">Логистика из Китая в Казахстан
+						от 1$ за кг от 10 дней</h1>
+					<div class="banner-desc" data-text = "dostavkaSubTitle">
+						Авто и ЖД логистика любых грузов из Китая в короткие сроки
+					</div>
+
+					<div class = "banner-desc2" data-text = "dostavkaSubTitle2">
+						НЕ карго. ОФИЦИАЛЬНО ОТ 200 КГ
+					</div>						
+
+
+				</div>
+
+				<div class="banner-right">
+					<div class="banner-tab">
+						<div class="banner-tab-nav">
+							<a href="#banner-tab-item-1" class="is-active">
+								<svg width="25" height="20" viewBox="0 0 25 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M24.375 13.75H23.75V9.52734C23.75 9.03125 23.5508 8.55469 23.1992 8.20312L19.2969 4.30078C18.9453 3.94922 18.4688 3.75 17.9727 3.75H16.25V1.875C16.25 0.839844 15.4102 0 14.375 0H1.875C0.839844 0 0 0.839844 0 1.875V14.375C0 15.4102 0.839844 16.25 1.875 16.25H2.5C2.5 18.3203 4.17969 20 6.25 20C8.32031 20 10 18.3203 10 16.25H15C15 18.3203 16.6797 20 18.75 20C20.8203 20 22.5 18.3203 22.5 16.25H24.375C24.7188 16.25 25 15.9688 25 15.625V14.375C25 14.0312 24.7188 13.75 24.375 13.75ZM6.25 18.125C5.21484 18.125 4.375 17.2852 4.375 16.25C4.375 15.2148 5.21484 14.375 6.25 14.375C7.28516 14.375 8.125 15.2148 8.125 16.25C8.125 17.2852 7.28516 18.125 6.25 18.125ZM18.75 18.125C17.7148 18.125 16.875 17.2852 16.875 16.25C16.875 15.2148 17.7148 14.375 18.75 14.375C19.7852 14.375 20.625 15.2148 20.625 16.25C20.625 17.2852 19.7852 18.125 18.75 18.125ZM21.875 10H16.25V5.625H17.9727L21.875 9.52734V10Z"
+										fill="#454545" />
+								</svg>
+								<span data-text = "rasschitat">Рассчитать</span>
+							</a>
+						</div>
+
+						<div class="banner-tab-content"  id = "form1">
+							<div id="banner-tab-item-1" class="banner-tab-item is-active">
+								<form>
+									<h2 class="banner-tab-title" data-text = "rasschitatDostavku">Рассчитать доставку</h2>
+									<input id = "name1" type="text" placeholder="Ваше имя" data-text-placeholder = "vasheImya">
+									<div class = "lead-error" id="nameError1">
+									</div>
+									<input id = "phone1" type="text" placeholder="Контактный номер телефона" data-text-placeholder = "telefon">
+									<div class = "lead-error" id="phoneError1">
+									</div>
+									<input id = "detail1" type="text" placeholder="Вес и габариты посылки" data-text-placeholder = "gabarity">
+									<div class = "lead-error2" id="allError1"></div>
+									<div class = "lead-success" id="allSuccess1"></div>
+									<button id = "button1" data-text = "podtverdit">Подтвердить</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-features">
+		<div class="youtube-slider">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<!-- Slide 1 with youtube video -->
+					<div class="swiper-slide">
+						<div class="video">
+							<video
+							id="my-video"
+							class="video-js"
+							controls
+							preload="none"
+							height="550"
+							width = "311"
+							data-setup="{}"
+							poster = "images/2mp4.jpg"
+
+						  >
+							<source src="./images/2.mp4" type="video/mp4" />
+							<p class="vjs-no-js">
+							  To view this video please enable JavaScript, and consider upgrading to a
+							  web browser that
+							  <a href="https://videojs.com/html5-video-support/" target="_blank"
+								>supports HTML5 video</a
+							  >
+							</p>
+						  </video>
+						</div>
+
+					</div>
+
+					<div class="swiper-slide">
+						<div class="video">
+							<video
+							id="my-video2"
+							class="video-js"
+							controls
+							preload="none"
+							height="550"
+							width = "311"
+							poster = "images/1mp4.png"
+
+							data-setup="{}"
+						  >
+							<source src="./images/1.mp4" type="video/mp4" />
+							<p class="vjs-no-js">
+							  To view this video please enable JavaScript, and consider upgrading to a
+							  web browser that
+							  <a href="https://videojs.com/html5-video-support/" target="_blank"
+								>supports HTML5 video</a
+							  >
+							</p>
+						  </video>
+						</div>
+
+					</div>
+					<!-- Slide 2 -->
+
+					<!-- Slide 3 with youtube video -->
+					<div class="swiper-slide">
+						<div class="video">
+							<video
+							id="my-video3"
+							class="video-js"
+							controls
+							preload="none"
+							height="550"
+							data-setup="{}"
+							width = "311"
+							poster = "images/3mp4.jpg"
+						  >
+							<source src="./images/3.mp4" type="video/mp4" />
+							<p class="vjs-no-js">
+							  To view this video please enable JavaScript, and consider upgrading to a
+							  web browser that
+							  <a href="https://videojs.com/html5-video-support/" target="_blank"
+								>supports HTML5 video</a
+							  >
+							</p>
+						  </video>
+						</div>
+
+					</div>
+
+					<!-- Slide 3 with youtube video -->
+					<div class="swiper-slide">
+						<div class="video">
+							<video
+							id="my-video4"
+							class="video-js"
+							controls
+							preload="none"
+							height="550"
+							data-setup="{}"
+							width = "311"
+							poster = "images/4mp4.png"
+						  >
+							<source src="./images/4.mp4" type="video/mp4" />
+							<p class="vjs-no-js">
+							  To view this video please enable JavaScript, and consider upgrading to a
+							  web browser that
+							  <a href="https://videojs.com/html5-video-support/" target="_blank"
+								>supports HTML5 video</a
+							  >
+							</p>
+						  </video>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+
+		</div>
+	</section>
+	<section class="s-price">
+		<div class="container">
+			<div class="container-prices">
+				<div class="price-box green" data-text = "nashiTseny">Наши цены</div>
+
+				<div class="price-box gray" data-text = "tsena3">
+					Авто LTL от 500 кг от 1$ за кг или от 150$ за куб за 10-20 дней (консолидация).
+
+				</div>
+				<div class="price-box" data-text = "tsena4">
+					ЖД LCL от 2000 кг 25-30 дней от 0,8$ за кг или от 130$ за куб.
+				</div>
+				<div class="price-box gray" data-text = "tsena5">
+					ЖД FCL контейнерные перевозки генеральных грузов от 5’500$ 40ft hq за 15-30 дней. 
+				</div>
+				<div class="price-box" data-text = "tsena6">
+					Авто фурой FTL перевозки от 7000$ за 10-20 дней.
+
+				</div>
+				<div class="price-box gray" data-text = "tsena7">
+					🚙 Доставка Автомобилей от 1000$ из Китая до Алматы 2-3 дня
+
+				</div>
+			</div>
+
+
+
+
+
+
+		</div>
+	</section>
+
+	<section class="s-about">
+		<div class="container">
+			<div class="about-row">
+				<div class="about-left">
+					<div class="def-desc" data-text = "nashaKompaniyaONas">
+						Наша компания осуществляет свою деятельность с 2015 года. В свою деятельность наша компания
+						занимается доставкой грузов из Китая в Казахстан, качественно и недорого, и оказывает полный
+						комплекс логистических услуг.
+						<br> <br>
+
+						Наш опыт работы по многим международным направлениям позволил нам развить и поднять
+						предоставление услуг логистики на новый уровень. Мы доставляем различные группы товаров на всей
+						территории Республики Казахстан.
+						<br> <br>
+
+						Благодаря нашему опыту, наши клиенты получают качественный сервис. Даже самые нестандартные
+						вопросы доставки груза, можно решить, если иметь дело с профессионалом.
+					</div>
+				</div>
+
+				<div class="about-right">
+					<img src="images/avatar.jpg" alt="Avatar">
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<section class="s-grid">
+		<div class="container">
+			<h2 class="def-title" data-text = "nashiPreimuchestva">Наши преимущества</h2>
+			<div class="def-desc" data-text = "pochemuVigodno">
+				Почему работать с нами выгодно?
+			</div>
+
+			<div class="grid-row">
+				<div class="grid-item">
+					<div class="grid-icon">
+						<img src="images/icon.svg" alt="Icon" width="50px">
+					</div>
+					<div class="grid-text">
+						<div class="grid-text-title" data-text = "preimuchestvo1">Гарантия сохранности грузов</div>
+						<div class="grid-text-desc" data-text = "prem1sub">Мы берем на себя полную юридическую и финансовую ответственность.
+						</div>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="grid-icon">
+						<img src="images/icon.svg" alt="Icon" width="50px">
+					</div>
+					<div class="grid-text">
+						<div class="grid-text-title" data-text = "preimuchestvo2">Индивидуальный подход</div>
+						<div class="grid-text-desc" data-text = "prem2sub">Разработка маршрута и согласование деталей производится
+							индивидуально для каждого клиента;
+						</div>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="grid-icon">
+						<img src="images/icon.svg" alt="Icon" width="50px">
+					</div>
+					<div class="grid-text">
+						<div class="grid-text-title" data-text = "preimuchestvo3">Фото отчёты</div>
+						<div class="grid-text-desc" data-text = "prem3sub">В подтверждение бережной доставки предоставляем фото отчет погрузки
+							вашего товара абсолютно бесплатно.
+						</div>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="grid-icon">
+						<img src="images/icon.svg" alt="Icon" width="50px">
+					</div>
+					<div class="grid-text">
+						<div class="grid-text-title" data-text = "preimuchestvo4">Собственные склады</div>
+						<div class="grid-text-desc" data-text = "prem4sub">Предоставление склада временного хранения для сборного груза
+							бесплатно.
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<div class="s-callback">
+		<div class="container">
+			<div class="callback-form" id = "form2">
+				<form>
+					<h2 class="def-title" data-text = "zayavku">Оставить заявку</h2>
+					<div class="def-desc" data-text = "zayavkaSub">
+						Мы поможем вам рассчитать стоимость и проконсультируем. Оставьте данные и номер в форме по
+						кнопке.
+					</div>
+					<input id = "name2" type="text" placeholder="Ваше имя" data-text-placeholder = "vasheImya">
+					<div class = "lead-error" id="nameError2">
+					</div>
+	
+					<input id = "phone2" type="text" placeholder="Контактный номер телефона" data-text-placeholder = "telefon">
+					<div class = "lead-error" id="phoneError2">
+					</div>
+					<input id = "detail2" type="text" placeholder="Вес и габариты посылки" data-text-placeholder = "gabarity">
+					<div class = "lead-error2" id="allError2"></div>
+						<div class = "lead-success" id="allSuccess2"></div>
+					<button id = "button2" class="callback-button" data-text = "zayavku2">Оставить заявку</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<footer class="site-footer">
+		<div class="container" data-text = "copyright">
+			Copyright © 2023 Baktybay.logistics. Все права защищены
+		</div>
+	</footer>
+	<script src="js/video.js"></script>
+	<script src = "./js/swiper-bundle.min.js"></script>
+	<script>
+let rus = {
+    vLichniyKabinet: "В личный кабинет",
+    dostavkaTitle: "Логистика из Китая в Казахстан от 1$ за кг, от 10 дней",
+    dostavkaSubTitle: "Авто и ЖД логистика любых грузов из Китая в короткие сроки",
+    dostavkaSubTitle2: "НЕ карго. ОФИЦИАЛЬНО ОТ 200 КГ",
+    rasschitat: "Рассчитать",
+    otslezhivanie: "Отслеживание",
+    podtverdit: "Подтвердить",
+    vvediteTrekNomer: "Введите трек-номер",
+    poisk: "Поиск",
+    nashiTseny: "Наши цены",
+    tsena3: "Авто LTL ОФИЦИАЛЬНО от 500 кг 10-20 дней от 1$ за кг или от 150$ за куб.",
+    tsena4: "ЖД LCL от 2’000 кг от 0,8$ за кг или от 130$ за куб за 20-30 дней (консолидация).",
+    tsena5: "ЖД контейнерные FCL перевозки генеральных грузов от 5500$ 40ft hq за 15-30 дней.",
+    tsena6: "Авто фурой FTL перевозки от 7000$ за 10-20 дней.",
+    tsena7: "🚙 Доставка Автомобилей от 1000$ из Китая до Алматы 2-3 дня",
+    nashaKompaniyaONas: "Наша компания осуществляет свою деятельность с 2015 года. В свою деятельность наша компания занимается доставкой грузов из Китая в Казахстан, качественно и недорого, и оказывает полный комплекс логистических услуг. <br> <br> Наш опыт работы по многим международным направлениям позволил нам развить и поднять предоставление услуг логистики на новый уровень. Мы доставляем различные группы товаров на всей территории Республики Казахстан. <br> <br>Благодаря нашему опыту, наши клиенты получают качественный сервис. Даже самые нестандартные вопросы доставки груза, можно решить, если иметь дело с профессионалом.",
+    nashiPreimuchestva: "Наши преимущества",
+    pochemuVigodno: "Почему работать с нами выгодно?",
+    preimuchestvo1: "Гарантия сохранности грузов",
+    prem1sub: "Мы берем на себя полную юридическую и финансовую ответственность.",
+    preimuchestvo2: "Индивидуальный подход",
+    prem2sub: "Разработка маршрута и согласование деталей производится индивидуально для каждого клиента.",
+    preimuchestvo3: "Фото отчёты",
+    prem3sub: "В подтверждение бережной доставки предоставляем фото отчет погрузки Вашего товара абсолютно бесплатно.",
+    preimuchestvo4: "Собственные склады",
+    prem4sub: "Предоставление склада временного хранения для сборного груза бесплатно.",
+    zayavku: "Оставить заявку",
+    zayavkaSub: "Мы поможем вам рассчитать стоимость и проконсультируем. Оставьте данные и номер в форме по кнопке.",
+    zayavku2: "Оставить заявку",
+    copyright: "Copyright © 2023 Baktybay.logistics. Все права защищены",
+    rasschitatDostavku: "Рассчитать доставку",
+	nameBlank: "Имя не может быть пустым",
+	phoneBlank: "Телефон не может быть пустым",
+	nameShort: "Имя должно быть длиннее 3 символов",
+	phoneUnvalid: "Некорректный формат номера телефона",
+	serverError: "Ошибка сервера. Попробуйте связаться с нами по контактному номеру телефона",
+	serverSuccess: "Ваша заявка отправлена. Мы ответим на ваш номер телефона в ближайшее время"
+
+};
+
+let kaz = {
+    vLichniyKabinet: "Жеке кабинет",
+    dostavkaTitle: "Қытайдан Қазақстанға логистика, 10 күннен, килограммдан 1$ бастап",
+    dostavkaSubTitle: "Қытайдан қысқа мерзімде авто және темір жол логистикасы",
+    dostavkaSubTitle2: "Біз карго емеспіз. РЕСМИ ТҮРДЕ 200 кг-дан бастап",
+    rasschitat: "Есептеу",
+    otslezhivanie: "Қадағалау",
+    podtverdit: "Жіберу",
+    vvediteTrekNomer: "Трек нөмірін енгізіңіз",
+    poisk: "Іздеу",
+    nashiTseny: "Біздің бағалар",
+    tsena3: "Авто LTL ресми түрде 500 кг-дан 10-20 күнде 1 кг үшін 1 доллардан немесе текше метрі 150 доллардан.",
+    tsena4: "Темір жол LCL 2000 кг-дан 20-30 күнде. Кг үшін 0,8 доллардан немесе текше метр үшін 130 доллардан.",
+    tsena5: "FCL теміржол контейнер жүктерді тасымалдау 15-30 күн ішінде 5500 доллардан 40 фут hq-дан .",
+    tsena6: "FTL жүк авто фура 10-20 күнге 7000 доллардан .",
+    tsena7: "🚙 Қытайдан Алматыға 1000 доллардан бастап 2-3 күн көліктерді жеткізу",
+    nashaKompaniyaONas: "Біздің компания 2015 жылдан бері жұмыс істейді. Біздің компания Қытайдан Қазақстанға тауарларды тиімді және арзан жеткізумен айналысады және логистикалық қызметтердің толық спектрін ұсынады. <br> <br> Біздің көптеген халықаралық салалардағы тәжірибеміз логистикалық қызметтерді көрсетуді жаңа деңгейге көтеруге және дамытуға мүмкіндік берді. Біз Қазақстан Республикасы бойынша тауарлардың әртүрлі топтарын жеткіземіз. <br> <br>Біздің тәжірибеміздің арқасында біздің клиенттер сапалы қызмет көрсетеді. Тіпті ең стандартты емес жүктерді жеткізу мәселелері, егер сіз кәсіби маманмен айналыссаңыз, шешілуі мүмкін.",
+    nashiPreimuchestva: "Біздің артықшылығымыз",
+    pochemuVigodno: "Неге бізбен жұмыс істеу тиімді?",
+    preimuchestvo1: "Жүк қауіпсіздігінің кепілі",
+    prem1sub: "Біз толық заңды және қаржылық жауапкершілікті аламыз.",
+    preimuchestvo2: "Жеке көзқарас",
+    prem2sub: "Маршрут егжей-тегжейлері келісі әр клиент үшін жеке.",
+    preimuchestvo3: "Фото есептері",
+    prem3sub: "Мұқият жеткізуді растау үшін біз сіздің тауарларыңызды жүктеудің есептерін мүлдем тегін ұсынамыз.",
+    preimuchestvo4: "Меншікті қоймалар",
+    prem4sub: "Біріктірілген жүктерді уақытша сақтау қоймасын ұсыну тегін.",
+    zayavku: "Өтінішіңізді жіберіңіз",
+    zayavkaSub: "Біз сізге шығындарды есептеуге көмектесеміз және сізге жеке ұсыныс береміз. Мәліметтер мен нөмірді қалдырыңыз.",
+    zayavku2: "Жіберу",
+    copyright: "Copyright © 2023 Baktybay.logistics. Барлық құқықтар сақталған",
+    rasschitatDostavku: "Жеткізуді есептеу",
+	nameBlank: "Бос болмауы керек",
+	phoneBlank: "Бос болмауы керек",
+	nameShort: "3 таңбадан ұзақ болуы керек",
+	phoneUnvalid: 'Нөмірінің пішімі дұрыс емес',
+	serverError: "Сервер қатесі. Біздің байланыс телефон нөміріміз арқылы хабарласып көріңіз",
+	serverSuccess: "Сіздің өтінішіңіз жіберілді. Біз сіздің телефон нөміріңізге мүмкіндігінше тез жауап береміз"
+
+
+};
+
+let eng = {
+    vLichniyKabinet: "To personal account",
+    dostavkaTitle: "Logistics from China to Kazakhstan from 0.9$ from 10 days",
+    dostavkaSubTitle: "Road and railway logistics of any freight from China in a short time",
+    dostavkaSubTitle2: "We are not a cargo company. We officially deliver from 200 kg.",
+    rasschitat: "Calculate",
+    otslezhivanie: "Track",
+    podtverdit: "Submit",
+    vvediteTrekNomer: "Enter track number",
+    poisk: "Search",
+    nashiTseny: "Our prices",
+    tsena3: "Auto LTL OFFICIAL from 500 kg 10-20 days from $1 per kg or from $150 per cubic meter.",
+    tsena4: "Railway LCL from 2000 kg 20-30 days. From $0.8 per kg or from $130 per cubic meter.",
+    tsena5: "Railway container FCL transportation of general cargo from $5500 40ft hq for 15-30 days.",
+    tsena6: "FTL truck from $7000 for 10-20 days.",
+    tsena7: "🚙 Delivery of Cars from $1000 from China to Almaty for 2-3 days",
+    nashaKompaniyaONas: "Our company has been operating since 2015. Our company is engaged in the delivery of goods from China to Kazakhstan, efficiently and inexpensively, and provides a full range of logistics services. <br> <br> Our experience in many international areas has allowed us to develop and raise the provision of logistics services to a new level. We deliver various groups of goods throughout the Republic of Kazakhstan. <br> <br>Thanks to our experience, our clients receive quality service. Even the most non-standard cargo delivery issues can be resolved if you deal with a professional.",
+    nashiPreimuchestva: "Our advantages",
+    pochemuVigodno: "Why is it profitable to work with us?",
+    preimuchestvo1: "Freight security guarantee",
+    prem1sub: "We take full legal and financial responsibility.",
+    preimuchestvo2: "Individual approach",
+    prem2sub: "The route is developed and details are agreed individually for each client.",
+    preimuchestvo3: "Photo reports",
+    prem3sub: "To confirm careful delivery, we provide a photo report of the loading of your freight absolutely free.",
+    preimuchestvo4: "Own warehouses",
+    prem4sub: "Provision of temporary storage of combined cargoes is free of charge.",
+    zayavku: "Submit application",
+    zayavkaSub: "We will help you calculate the cost and give you a personal offer. Leave your details and number in the form using the button.",
+    zayavku2: "Submit ",
+    copyright: "Copyright © 2023 Baktybay.logistics. All rights reserved",
+    rasschitatDostavku: "Сalculate delivery",
+	nameBlank: "Name can't be blank",
+	phoneBlank: "Phone can't be blank",
+	nameShort: "Must be longer than 3 characters",
+	phoneUnvalid: 'Incorrect phone number format',
+	serverError: "Server error. Try contacting us at our contact phone number",
+	serverSuccess: "Your application has been sent. We will answer your phone number as soon as possible"
+
+
+
+
+};
+
+let rusPlaceholder = {
+    vasheImya: "Ваше имя",
+    telefon: "Контактный номер телефона",
+    gabarity: "Вес и габариты посылки"
+
+}
+let kazPlaceholder = {
+    vasheImya: "Аты-жөні",
+    telefon: "Байланыс телефон нөмірі",
+    gabarity: "Жүктің салмағы мен өлшемдері"
+
+}
+let engPlaceholder = {
+    vasheImya: "Your name",
+    telefon: "Contact phone number",
+    gabarity: "Weight and dimensions of the freight"
+
+}
+var youtubeSwiper = new Swiper('.swiper-container', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+        350: {
+            spaceBetween: 100,
+        },
+        1010: {}
+    },
+    initialSlide: 1,
+
+});
+document.querySelectorAll('.banner-tab-nav a').forEach((nav) => {
+    var _nav = nav;
+    nav.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (!_nav.classList.contains('is-active')) {
+            var tab = document.querySelector('.banner-tab-item.is-active');
+            var nav = document.querySelector('.banner-tab-nav a.is-active')
+
+            document.querySelector('.banner-tab-item:not(.is-active)').classList.add('is-active');
+            document.querySelector('.banner-tab-nav a:not(.is-active)').classList.add('is-active');
+
+            tab.classList.remove('is-active');
+            nav.classList.remove('is-active');
+        };
+
+    });
+});
+
+window.language = parseInt(localStorage.getItem("lang")) || 1;
+
+
+switch (window.language) {
+    case 1:
+        document.getElementById('language-picker-select').selectedIndex = 0;
+        document.getElementById('language-picker-select2').selectedIndex = 0;
+        break;
+    case 2:
+        document.getElementById('language-picker-select').selectedIndex = 1;
+        document.getElementById('language-picker-select2').selectedIndex = 1;
+        break;
+    case 3:
+        document.getElementById('language-picker-select').selectedIndex = 2;
+        document.getElementById('language-picker-select2').selectedIndex = 2;
+        break;
+    default:
+        break;
+}
+writeLanguage(document.querySelector('body'))
+
+
+document.getElementById('language-picker-select').addEventListener('change', function () {
+    // Получаем выбранное значение
+    const selectedValue = document.getElementById('language-picker-select').value;
+
+    // Используем значение для обновления содержимого другого элемента
+    switch (selectedValue) {
+        case 'rus':
+            changeLanguage(1);
+            break;
+        case 'kaz':
+            changeLanguage(2);
+            break;
+        case 'eng':
+            changeLanguage(3);
+            break;
+        default:
+            break;
+    }
+});
+document.getElementById('language-picker-select2').addEventListener('change', function () {
+    // Получаем выбранное значение
+    const selectedValue = document.getElementById('language-picker-select2').value;
+
+    // Используем значение для обновления содержимого другого элемента
+    switch (selectedValue) {
+        case 'rus':
+            changeLanguage(1);
+            break;
+        case 'kaz':
+            changeLanguage(2);
+            break;
+        case 'eng':
+            changeLanguage(3);
+            break;
+        default:
+            break;
+    }
+});
+function changeLanguage(lang) {
+    if (lang === 1) {
+        window.language = 1
+        localStorage.setItem("lang", 1)
+
+    }
+    else if (lang === 2) {
+        window.language = 2
+        localStorage.setItem("lang", 2)
+
+
+    }
+    else if (lang === 3) {
+        window.language = 3
+        localStorage.setItem("lang", 3)
+    }
+    writeLanguage(document.querySelector('body'))
+}
+
+
+function writeLanguage(el) {
+    if (window.language === 1) {
+        lang = rus
+        langPlaceholder = rusPlaceholder
+
+    }
+    else if (window.language === 2) {
+        lang = kaz
+        langPlaceholder = kazPlaceholder
+
+    }
+    else if (window.language === 3) {
+        lang = eng
+        langPlaceholder = engPlaceholder
+
+    }
+    el.querySelectorAll('[data-text]').forEach(el => {
+        el.innerHTML = lang[el.getAttribute('data-text')];
+    })
+    el.querySelectorAll('[data-text-placeholder]').forEach(el => {
+        el.placeholder = langPlaceholder[el.getAttribute('data-text-placeholder')];
+    });
+
+}
+
+
+function submitForm(formId) {
+    var nameId = 'name' + formId;
+    var phoneId = 'phone' + formId;
+    var detailId = 'detail' + formId;
+
+    var name = document.getElementById(nameId).value;
+    var phone = document.getElementById(phoneId).value;
+    var detail = document.getElementById(detailId).value;
+
+    // Очистка предыдущих сообщений
+    document.getElementById('nameError' + formId).innerText = '';
+    document.getElementById('phoneError' + formId).innerText = '';
+    document.getElementById('allError' + formId).innerText = '';
+    document.getElementById('allSuccess' + formId).innerText = '';
+    document.getElementById('button' + formId).innerHTML = '<div class="lds-ring"><div></div><div></div><div></div><div></div></div>';
+
+
+    // Валидация полей
+    var flag = false
+    if (name.length === 0) {
+        document.getElementById('nameError' + formId).innerHTML = '<span data-text = "nameBlank"></span>';
+        flag = true;
+    }
+
+    if (phone.length === 0) {
+        document.getElementById('phoneError' + formId).innerHTML = '<span data-text = "phoneBlank"></span>';
+        flag = true;
+    }
+
+    if (flag) {
+		writeLanguage(document.getElementById('form' + formId));
+        return;
+    }
+    if (name.length <= 3) {
+        document.getElementById('nameError' + formId).innerHTML = '<span data-text = "nameShort"></span>';
+		writeLanguage(document.getElementById('form' + formId));
+
+        return;
+    }
+
+    // Регулярное выражение для проверки телефонного номера
+    var phoneRegex = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+    if (!phoneRegex.test(phone)) {
+        document.getElementById('phoneError' + formId).innerHTML = '<span data-text = "phoneUnvalid"></span>';
+		writeLanguage(document.getElementById('form' + formId));
+        return;
+    }
+
+    var formData = {
+        name: name,
+        phone: phone,
+        detail: detail
+    };
+    fetch('https://api.baktybay-logistics.kz/v1/other/addlead', {
+        method: 'POST',
+        headers: {
+            // 'Content-Type': 'application/json',
+			'Content-Type': 'text/plain',
+
+        },
+        body: JSON.stringify(formData),
+    })
+        .then(response => {
+
+            if (response.status === 200) {
+                document.getElementById('allSuccess' + formId).innerHTML = '<span data-text = "serverSuccess"></span>';
+				writeLanguage(document.getElementById('form' + formId));
+
+
+            } else if (response.status === 400) {
+                document.getElementById('allError' + formId).innerHTML = '<span data-text = "serverError"></span>';
+				writeLanguage(document.getElementById('form' + formId));
+
+                console.log('400');
+
+            }
+            else {
+                document.getElementById('allError' + formId).innerHTML = '<span data-text = "serverError"></span>';
+				writeLanguage(document.getElementById('form' + formId));
+
+                console.log('401')
+            }
+        }).catch((error) =>{
+			console.log(error)
+			document.getElementById('allError' + formId).innerHTML = '<span data-text = "serverError"></span>';
+			writeLanguage(document.getElementById('form' + formId));
+
+		})
+
+}
+
+document.getElementById('button1').addEventListener('click', (e) => { e.preventDefault(); submitForm(1) })
+document.getElementById('button2').addEventListener('click', (e) => { e.preventDefault(); submitForm(2) })
+
+	</script>
+</body>
+
+</html>
